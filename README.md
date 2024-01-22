@@ -30,7 +30,7 @@ To run this script locally on your machine, follow these steps:
 
 The script automates the process of clicking a button. It also records the state of the poll results both before and after the clicking of the button. This allows for potential testing so that a user can later assert the expected poll result. Below are the steps to run the script in terminal.
 
-1. Open your terminal and navigate to the project **'/scripts'** directory.
+1. Open your terminal and navigate to the project root directory.
 2. Run the **'pollAutomation.js'** script with a specified voting option as a command-line argument:
 
    ```bash
