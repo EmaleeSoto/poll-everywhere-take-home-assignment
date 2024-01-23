@@ -15,7 +15,7 @@ To run this script locally on your machine, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/EmaleeSoto/poll-everywhere-take-home-assignment.git
    ```
 
 2. Navigate to the project root directory:
@@ -24,6 +24,12 @@ To run this script locally on your machine, follow these steps:
 
    ```bash
    npm i puppeteer
+   ```
+   
+4. If you receive an error related to Chromium startup failure, you may need to install the Chrome Browser with the following command:
+
+   ```bash
+   npx puppeteer browsers install chrome
    ```
 
 ### Usage
