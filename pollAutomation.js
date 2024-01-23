@@ -12,10 +12,9 @@ const automateVoteClick = require("./scripts/automateVoteClick.js");
     await page.goto(
       "https://viz.polleverywhere.com/multiple_choice_polls/AxE2ULWiYsaGgmZ0Zundf"
     );
-
-    const oldVotingResults = await scrapePollResults(page);
+    const oldVotingResults = await scrapePollResults(browser);
     await automateVoteClick(votingOption, browser);
-    const updatedVotingResults = await scrapePollResults(page);
+    const updatedVotingResults = await scrapePollResults(browser);
     const pollResults = {
       "Previous Poll Results": oldVotingResults,
       "Updated Poll Results": updatedVotingResults,

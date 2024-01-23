@@ -1,4 +1,8 @@
-const scrapePollResults = async (page) => {
+const scrapePollResults = async (browser) => {
+  const page = await browser.newPage();
+  await page.goto(
+    "https://viz.polleverywhere.com/multiple_choice_polls/AxE2ULWiYsaGgmZ0Zundf"
+  );
   const resultsBody = await page.$$(
     "#options_multiple_choice_poll_instance_28696495 > div"
   );
@@ -25,6 +29,7 @@ const scrapePollResults = async (page) => {
     allResults[option] = percentage;
     allResults[`Votes for ${option}`] = numberOfVoters;
   }
+
   return allResults;
 };
 

@@ -1,5 +1,3 @@
-const puppeteer = require("puppeteer");
-
 const automateVoteClick = async (votingOption, browser) => {
   const page = await browser.newPage();
   await page.goto("https://pollev.com/qainterview880");
